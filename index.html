@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fetch API Lesson Demo</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fetch API Lesson Demo</h1>
+      <form id="news_form">
+        <label for="search-term">Search</label>
+        <input id="search-term" type="text" required />
+        <label for="items-per-page">Number Of Items</label>
+        <input id="items-per-page" type="text" value="10" required />
+        <button type="submit">Fetch</button>
+      </form>
+      <section id="results" class="hidden">
+        <h2>Results</h2>
+        <ul id="results-list"></ul>
+      </section>
+    </div>
+    <template id="results-template">
+      <li>
+        <h3 id="article-title"></h3>
+        <p id="article-body"></p>
+      </li>
+    </template>
+    <script src="./index.js"></script>
+  </body>
+</html>
