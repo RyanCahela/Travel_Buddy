@@ -1,4 +1,4 @@
-const API_KEY =  
+const API_KEY = process.env.API_KEY;
 const API_HOST = "contextualwebsearch-websearch-v1.p.rapidapi.com";
 
 const BASE_URL =
